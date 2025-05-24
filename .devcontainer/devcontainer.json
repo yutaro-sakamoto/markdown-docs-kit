@@ -1,0 +1,6 @@
+{
+    "name": "markdown-docs-kit",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "markdown-docs-kit",
+    "workspaceFolder": "/workspaces/markdown-docs-kit"
+}

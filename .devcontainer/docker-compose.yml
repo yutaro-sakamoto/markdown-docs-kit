@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  markdown-docs-kit:
+    image: markdown-docs-kit
+    container_name: markdown-docs-kit
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    volumes:
+      - ../..:/workspaces:cached
+    tty: true
+    logging:
+      driver: none
