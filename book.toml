@@ -1,0 +1,5 @@
+[book]
+authors = ["Yutaro Sakamoto"]
+language = "en"
+src = "src"
+title = "Markdown Docs Kit"
