@@ -13,3 +13,5 @@ services:
     tty: true
     logging:
       driver: none
+    ports:
+      - "3000:3000"

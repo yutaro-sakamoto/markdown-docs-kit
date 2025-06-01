@@ -3,6 +3,18 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "markdown-docs-kit",
     "workspaceFolder": "/workspaces/markdown-docs-kit",
+    
+    // ポート転送の設定
+    "forwardPorts": [3000],
+    
+    // ポートの詳細設定
+    "portsAttributes": {
+        "3000": {
+            "label": "mdBook Preview",
+            "onAutoForward": "openBrowser"
+        }
+    },
+    
     "customizations": {
         "vscode": {
             "extensions": [

@@ -1,0 +1,22 @@
+{
+  "name": "markdown-docs-kit",
+  "version": "1.0.0",
+  "description": "Markdown documentation template with mdbook",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:markdown": "markdownlint src/**/*.md",
+    "build": "mdbook build",
+    "serve": "mdbook serve"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "keywords": [
+    "markdown",
+    "documentation",
+    "mdbook"
+  ],
+  "author": "",
+  "license": "MIT"
+}
