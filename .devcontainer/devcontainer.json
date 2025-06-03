@@ -1,28 +1,28 @@
 {
-    "name": "markdown-docs-kit",
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "markdown-docs-kit",
-    "workspaceFolder": "/workspaces/markdown-docs-kit",
-    
-    // ポート転送の設定
-    "forwardPorts": [3000],
-    
-    // ポートの詳細設定
-    "portsAttributes": {
-        "3000": {
-            "label": "mdBook Preview",
-            "onAutoForward": "openBrowser"
-        }
-    },
-    
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-vscode.live-server",
-                "DavidAnson.vscode-markdownlint",
-                "streetsidesoftware.code-spell-checker",
-                "esbenp.prettier-vscode"
-            ]
-        }
+  "name": "markdown-docs-kit",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "markdown-docs-kit",
+  "workspaceFolder": "/workspaces/markdown-docs-kit",
+
+  // ポート転送の設定
+  "forwardPorts": [3000],
+
+  // ポートの詳細設定
+  "portsAttributes": {
+    "3000": {
+      "label": "mdBook Preview",
+      "onAutoForward": "openBrowser"
     }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.live-server",
+        "DavidAnson.vscode-markdownlint",
+        "streetsidesoftware.code-spell-checker",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
 }

@@ -17,13 +17,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
-      
+          node-version: "20"
+          cache: "npm"
+
       # npm dependencies をインストール
       - name: Install npm dependencies
         run: npm ci
-      
+
       # Prettier フォーマットチェック
       - name: Check Prettier formatting
         run: npm run format:check
@@ -39,15 +39,20 @@ jobs:
             target
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
 
-      # mdbook をインストール
+      # Install mdbook
       - name: Install mdbook
         run: cargo install mdbook
 
-      # mdbook でビルド
+      # Build with mdbook
       - name: Build mdbook
         run: mdbook build
 
+      # Check by markdownlint-cli2
       - name: Run markdownlint-cli2
         uses: DavidAnson/markdownlint-cli2-action@v20
         with:
           globs: "src/*.md"
+
+      # Check by textlint
+      - name: Run textlint
+        run: npx textlint src/*.md
