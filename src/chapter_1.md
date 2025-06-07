@@ -1,20 +1,26 @@
 # Markdown Documentation Kit
 
-A comprehensive template for writing documents in Markdown format and generating HTML files using mdBook.
+A comprehensive template for writing documents in Markdown format.
+This template generates HTML files using mdBook.
 
 ## Features
 
-- 📝 **mdBook Integration** - Write in Markdown, generate beautiful HTML documentation
+- 📝 **mdBook Integration** - Write in Markdown, generate beautiful HTML
+  documentation
 - 🎨 **Prettier Formatting** - Automatic code formatting for consistent style
 - ✅ **Quality Checks** - Markdown linting and spell checking
-- 🐳 **Dev Container Support** - Ready-to-use development environment for VS Code and GitHub Codespaces
+- 🐳 **Dev Container Support** - Ready-to-use development environment for VS
+  Code and GitHub Codespaces
 - 🚀 **GitHub Actions** - Automated CI/CD pipeline for building and validation
 - 🌐 **Live Preview** - Real-time preview on localhost:3000
-- ☁️ **GitHub Codespaces Compatible** - Instant cloud-based development environment
+- ☁️ **GitHub Codespaces Compatible** - Instant cloud-based development
+  environment
 
 ## Quick Start
 
-This project is designed to work seamlessly with **Dev Containers**, providing a consistent development environment with all necessary tools pre-installed.
+This project is designed to work seamlessly with **Dev Containers**.
+It provides a consistent development environment with all necessary tools
+pre-installed.
 
 ### Using Dev Container (Recommended)
 
@@ -36,7 +42,8 @@ This project is designed to work seamlessly with **Dev Containers**, providing a
 
 ### Manual Setup (Not Recommended)
 
-If you prefer not to use Dev Container, you can manually install the dependencies:
+If you prefer not to use Dev Container, you can manually install the
+dependencies:
 
 1. Install Rust and Cargo:
 
@@ -66,6 +73,7 @@ If you prefer not to use Dev Container, you can manually install the dependencie
    - Add more `.md` files as needed
 
 2. Update `book.toml` with your book metadata:
+
    ```toml
    [book]
    title = "Your Book Title"
@@ -83,7 +91,7 @@ npm run serve
 mdbook serve
 ```
 
-Access your documentation at http://localhost:3000
+Access your documentation at <http://localhost:3000>
 
 #### Build for production
 
@@ -117,7 +125,7 @@ npm run lint:markdown
 
 ## Project Structure
 
-```
+```text
 ├── src/                    # Markdown source files
 │   ├── SUMMARY.md         # Table of contents
 │   └── chapter_1.md       # Content chapters
@@ -143,21 +151,25 @@ The project includes automated CI/CD that:
 
 ### Styling
 
-Edit `book.toml` to customize the appearance and behavior of your documentation.
+Edit `book.toml` to customize the appearance and behavior of your
+documentation.
 
 ### Adding Plugins
 
-mdBook supports various plugins. Install them via Cargo and configure in `book.toml`.
+mdBook supports various plugins. Install them via Cargo and configure in
+`book.toml`.
 
 ### Adding More Linting Rules
 
-Extend the linting configuration in `package.json` and add more textlint rules as needed.
+Extend the linting configuration in `package.json` and add more textlint
+rules as needed.
 
 ## Contributing
 
 1. Fork the repository
 2. Make your changes
-3. Ensure all checks pass: `npm run format:check && npm run lint:markdown`
+3. Ensure all checks pass:
+   `npm run format:check && npm run lint:markdown`
 4. Submit a pull request
 
 ## License
